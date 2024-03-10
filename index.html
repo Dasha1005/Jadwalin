@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwalin</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="mobile-menu" viewBox="0 0 32 32">
+            <path d="M18 22.5H3V20H18V22.5ZM25.5 16.25H3V13.75H25.5V16.25ZM18 10H3V7.5H18V10Z" fill="#231D4F"/>
+        </symbol>
+        <symbol id="check-dark" viewBox="0 0 20 20">
+            <path d="M10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C19.9936 4.47982 15.5202 0.00642897 10 0Z" fill="#5243C2" fill-opacity="0.15"/>
+            <path d="M15.7725 6.83334L10.0684 14.5742C9.93234 14.7547 9.72948 14.8729 9.50539 14.9024C9.2813 14.9319 9.05478 14.87 8.87671 14.7308L4.80338 11.4742C4.44393 11.1865 4.38573 10.662 4.67338 10.3025C4.96102 9.94306 5.4856 9.88486 5.84504 10.1725L9.24171 12.89L14.4309 5.84751C14.601 5.59217 14.8978 5.45099 15.2032 5.48004C15.5087 5.50909 15.7735 5.70365 15.8925 5.98649C16.0115 6.26932 15.9654 6.59466 15.7725 6.83334Z" fill="#7B72C1"/>
+        </symbol>
+        <symbol id="check-light" viewBox="0 0 20 20">
+            <path opacity="0.1" d="M10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C19.9936 4.47982 15.5202 0.00642897 10 0Z" fill="white"/>
+            <path d="M15.7725 6.83334L10.0684 14.5742C9.93234 14.7547 9.72948 14.8729 9.50539 14.9024C9.2813 14.9319 9.05478 14.87 8.87671 14.7308L4.80338 11.4742C4.44393 11.1865 4.38573 10.662 4.67338 10.3025C4.96102 9.94306 5.4856 9.88486 5.84504 10.1725L9.24171 12.89L14.4309 5.84751C14.601 5.59217 14.8978 5.45099 15.2032 5.48004C15.5087 5.50909 15.7735 5.70365 15.8925 5.98649C16.0115 6.26932 15.9654 6.59466 15.7725 6.83334Z" fill="white"/>
+        </symbol>
+    </svg>
+    <div class="bg-wrapper">
+        <header class="header">
+            <div class="header__inner">
+                <button class="mobile-menu">
+                    <svg class="mobile-menu__icon" aria-hidden="true">
+                        <use xlink:href="#mobile-menu"></use>
+                    </svg>
+                </button>
+                <a href="#" class="logo-link">
+                    <img class="logo" src="images/logo.svg" alt="Jadwalin">
+                </a>
+                <a href="#" class="user-action light-btn">Join Now</a>
+            </div>
+        </header>
+        <main class="main">
+            <section class="pricing">
+                <div class="container">
+                    <h1 class="pricing__title">Plans & Pricing</h1>
+                    <div class="pricing__inner">
+                        <p class="pricing__text">Whether your time-saving automation needs are large or small, we’re here to help you scale.</p>
+                        <div class="pricing__tabs-nav">
+                            <button class="pricing__tabs-btn" data-tab="#tab-1">Monthly</button>
+                            <button class="pricing__tabs-btn" data-tab="#tab-2">Yearly</button>
+                        </div>
+                    </div>
+                    <div class="pricing__tabs-content">
+                        <div class="pricing__tabs-item" id="tab-1">
+                            <div class="pricing__tabs-wrap">
+                                <p class="pricing__plan-cost"><span>$19</span> /month</p>
+                                <p class="pricing__plan-name">Starter</p>
+                                <p class="pricing__plan-description">Unleash the power of automation.</p>
+                                <ul class="pricing__list">
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-dark"></use>
+                                        </svg>
+                                        <span class="pricing__item-text">Multi-step Zaps</span>
+                                    </li>
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-dark"></use>
+                                        </svg>
+                                        <span class="pricing__item-text">3 Premium Apps</span>
+                                    </li>
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-dark"></use>
+                                        </svg>
+                                        <span class="pricing__item-text">2 Users team</span>
+                                    </li>
+                                </ul>
+                                <a href="#" class="pricing__link">Choose plan</a>
+                            </div>
+                            <div class="pricing__tabs-wrap">
+                                <p class="pricing__plan-cost"><span>$54</span> /month</p>
+                                <p class="pricing__plan-name">Professional</p>
+                                <p class="pricing__plan-description">Advanced tools to take your work to the next level.</p>
+                                <ul class="pricing__list">
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-dark"></use>
+                                        </svg>
+                                        <span class="pricing__item-text">Multi-step Zaps</span>
+                                    </li>
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-dark"></use>
+                                        </svg>
+                                        <span class="pricing__item-text">Unlimited Premium</span>
+                                    </li>
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-dark"></use>
+                                        </svg>
+                                        <span class="pricing__item-text">50 Users team</span>
+                                    </li>
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-dark"></use>
+                                        </svg>
+                                        <span class="pricing__item-text">Shared Workspace</span>
+                                    </li>
+                                </ul>
+                                <a href="#" class="pricing__link">Choose plan</a>
+                            </div>
+                            <div class="pricing__tabs-wrap dark">
+                                <p class="pricing__plan-cost dark"><span>$89</span> /month</p>
+                                <p class="pricing__plan-name dark">Company</p>
+                                <p class="pricing__plan-description dark">Automation plus enterprise-grade features.</p>
+                                <ul class="pricing__list">
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-light"></use>
+                                        </svg>
+                                        <span class="pricing__item-text dark">Multi-step Zaps</span>
+                                    </li>
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-light"></use>
+                                        </svg>
+                                        <span class="pricing__item-text dark">Unlimited Premium </span>
+                                    </li>
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-light"></use>
+                                        </svg>
+                                        <span class="pricing__item-text dark">Unlimited Users Team</span>
+                                    </li>
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-light"></use>
+                                        </svg>
+                                        <span class="pricing__item-text dark">Advanced Admin</span>
+                                    </li>
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-light"></use>
+                                        </svg>
+                                        <span class="pricing__item-text dark">Custom Data Retention</span>
+                                    </li>
+                                </ul>
+                                <a href="#" class="pricing__link dark">Choose plan</a>
+                            </div>
+                        </div>
+                        <div class="pricing__tabs-item" id="tab-2">
+                            <div class="pricing__tabs-wrap">
+                                <p class="pricing__plan-cost"><span>$12</span> /month</p>
+                                <p class="pricing__plan-name">Starter</p>
+                                <p class="pricing__plan-description">Unleash the power of automation.</p>
+                                <ul class="pricing__list">
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-dark"></use>
+                                        </svg>
+                                        <span class="pricing__item-text">Multi-step Zaps</span>
+                                    </li>
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-dark"></use>
+                                        </svg>
+                                        <span class="pricing__item-text">3 Premium Apps</span>
+                                    </li>
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-dark"></use>
+                                        </svg>
+                                        <span class="pricing__item-text">2 Users team</span>
+                                    </li>
+                                </ul>
+                                <a href="#" class="pricing__link">Choose plan</a>
+                            </div>
+                            <div class="pricing__tabs-wrap">
+                                <p class="pricing__plan-cost"><span>$36</span> /month</p>
+                                <p class="pricing__plan-name">Professional</p>
+                                <p class="pricing__plan-description">Advanced tools to take your work to the next level.</p>
+                                <ul class="pricing__list">
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-dark"></use>
+                                        </svg>
+                                        <span class="pricing__item-text">Multi-step Zaps</span>
+                                    </li>
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-dark"></use>
+                                        </svg>
+                                        <span class="pricing__item-text">Unlimited Premium</span>
+                                    </li>
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-dark"></use>
+                                        </svg>
+                                        <span class="pricing__item-text">50 Users team</span>
+                                    </li>
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-dark"></use>
+                                        </svg>
+                                        <span class="pricing__item-text">Shared Workspace</span>
+                                    </li>
+                                </ul>
+                                <a href="#" class="pricing__link">Choose plan</a>
+                            </div>
+                            <div class="pricing__tabs-wrap dark">
+                                <p class="pricing__plan-cost dark"><span>$56</span> /month</p>
+                                <p class="pricing__plan-name dark">Company</p>
+                                <p class="pricing__plan-description dark">Automation plus enterprise-grade features.</p>
+                                <ul class="pricing__list">
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-light"></use>
+                                        </svg>
+                                        <span class="pricing__item-text dark">Multi-step Zaps</span>
+                                    </li>
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-light"></use>
+                                        </svg>
+                                        <span class="pricing__item-text dark">Unlimited Premium </span>
+                                    </li>
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-light"></use>
+                                        </svg>
+                                        <span class="pricing__item-text dark">Unlimited Users Team</span>
+                                    </li>
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-light"></use>
+                                        </svg>
+                                        <span class="pricing__item-text dark">Advanced Admin</span>
+                                    </li>
+                                    <li class="pricing__list-item">
+                                        <svg class="pricing__item-icon" aria-hidden="true">
+                                            <use xlink:href="#check-light"></use>
+                                        </svg>
+                                        <span class="pricing__item-text dark">Custom Data Retention</span>
+                                    </li>
+                                </ul>
+                                <a href="#" class="pricing__link dark">Choose plan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
